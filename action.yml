@@ -1,0 +1,19 @@
+name: 'Get Git Log Action'
+description: 'Get git log from specify git tag to the present'
+author: 'JantHsueh'
+branding:
+  icon: arrow-right-circle
+  color: gray-dark
+inputs:
+  tag:
+    description: 'Specify git tag'
+    required: true
+    default: last_release
+outputs:
+  log:
+    description: 'git logs'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.tag }}
