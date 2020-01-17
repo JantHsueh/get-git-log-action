@@ -7,8 +7,7 @@ branding:
 inputs:
   tag:
     description: 'Specify git tag'
-    required: true
-    default: last_release
+    required: false
 outputs:
   log:
     description: 'git logs'
