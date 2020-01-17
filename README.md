@@ -14,12 +14,21 @@
       tag: last_release
 ```
 
+Use recent tag
+```yaml
+  - name: Get Git Log
+    id: git_log
+    uses: JantHsueh/get-git-log-action@master
+   
+```
+
+
 
 ## Inputs
 
 | Parameter  | Required | Info                                                         |
 | ---------- | -------- | ------------------------------------------------------------ |
-| `tag`  | `true`   | specify git tag, Get git log from the git tag to the present |
+| `tag`  | `false`   | specify git tag, , Get git log from the tag to the present. Use recent tag by default |
 
 
 ## Outputs
